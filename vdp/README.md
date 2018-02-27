@@ -7,11 +7,10 @@ To successfully invoke Visa APIs using X-Pay-Token, your application needs to do
 
 1. Include the API Key as a query parameter
 2. Include the Accept and X-Pay-Token in the request header as shown in the sample below
-```
-GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0 
- Host: sandbox.api.visa.com
- Accept: application/json
- X-PAY-TOKEN: xv2:1455716783:f5d15ed23f825ac69cd42e6fa187a175ecf7e9566ce4f21e11bad49bed4cc363
+```PHP
+$header[] = 'X-PAY-TOKEN: xv2:1455716783:f5d15ed23f825ac69cd42e6fa187a175ecf7e9566ce4f21e11bad49bed4cc363';
+$header[] = 'Accept: application/json';
+# cURL method Get
  ```
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
