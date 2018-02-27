@@ -1,5 +1,5 @@
 # Getting started on Visa Developer
-## API key - Shared Secret (X-Pay-Token)
+### API key - Shared Secret (X-Pay-Token)
 
 Some Visa APIs require API Key – Shared Secret authentication, which Visa refers to as X-Pay-Token. To invoke an API using **X-Pay-Token**, you will need an API Key and a Shared Secret, which is provided on the application details page as mentioned in the Visa Developer Portal introduction.
 
