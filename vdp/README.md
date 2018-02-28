@@ -9,7 +9,7 @@ To successfully invoke Visa APIs using `x-pay-token`, your application needs to 
 2. Include the `Accept` and `x-pay-token` in the request header as shown in the sample below.
 
 |Field   |Value   |
-| -------|:------:|
+|:-------|:-------|
 |Accept  |Application/json|
 |x-pay-token|x-pay-token*|
 
@@ -35,7 +35,7 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
 |query_string  |The apiKey is a required query parameter.  Query parameters should be in lexicographical order.|
 |request_body  |The API endpoint-specific request body string.|
 
-**<a hname="mssg"></a>Example:**
+**<a name="mssg"></a>Example:**
 ```
 message = timestamp + resource_path + query_string + request_body;
 ```
