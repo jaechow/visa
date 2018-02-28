@@ -35,16 +35,33 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
 |query_string  |The apiKey is a required query parameter.  Query parameters should be in lexicographical order.|
 |request_body  |The API endpoint-specific request body string.|
 
-**Example:**
+**<a hname="mssg"></a>Example:**
 ```
 message = timestamp + resource_path + query_string + request_body;
 ```
 2. Construct the `x-pay-token` as shown below:
 
-**Example:**
+**<a name="xp"></a>Example:**
 ```
 xpaytoken = "xv2:" + ":" + SHA256HMAC(shared_secret,message);
 ```
 **<a name="hwphp"></a>Testing x-pay-token with `helloworld`**
+1. Edit the file `helloworld.php` in your editor of choice
+2. Take note of your Visa Developer API Key and Shared Secret
+3. In your text editor set the values for `apikey` and `secret` with your API Key and Shared Secret
+**Example**
+```PHP
+$apikey='APIKEY-HERE';
+$secret='SHAREDSECRET-HERE';
+```
+4. Save your changes and upload or view locally
+If the calculation of the `x-pay-token` is correct you will see a timestamp and the message `helloworld`
+**Example**
+```json
+{
+    "timestamp": "2018-02-28T00:48:31",
+    "message": "helloworld"
+}
+```
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
