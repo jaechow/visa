@@ -53,7 +53,7 @@ xpaytoken = "xv2:" + ":" + SHA256HMAC(shared_secret,message);
 **Example**
 ```PHP
 $apikey='KSKDFJOP934ALSFDJP34';
-$secret='SHAREDSECRET-HERE';
+$secret='LKJQW90P4439398Y279O';
 ```
 
 4. Save your changes and upload or view locally
