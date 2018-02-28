@@ -48,7 +48,7 @@ xpaytoken = "xv2:" + ":" + SHA256HMAC(shared_secret,message);
 **<a name="hwphp"></a>Testing x-pay-token with `helloworld`**
 1. Edit the file [`helloworld.php`](helloworld.php) in your editor of choice
 2. Take note of your Visa Developer API Key and Shared Secret
-3. In your text editor set the values for `apikey` and `secret` with your API Key and Shared Secret
+3. In your text editor set the values for `$apikey` and `$secret` with your API Key and Shared Secret
 
 **Example**
 ```PHP
