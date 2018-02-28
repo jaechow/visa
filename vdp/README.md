@@ -22,5 +22,18 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
  Accept: application/json
  X-PAY-TOKEN: xv2:1455716783:f5d15ed23f825ac69cd42e6fa187a175ecf7e9566ce4f21e11bad49bed4cc363
  ```
+
+
+**Generating the x-pay-token**
+
+1. Build a string of concatenated values with the following parameters:
+
+|Parameter     |Description     |
+|..............|................|
+|timestamp     |Current *UTC* timestamp|
+|resource_path |API endpoint    |
+|query_string  |The apiKey is a required query parameter.  Query parameters should be in lexicographical order.|
+|request_body  |The API endpoint-specific request body string.|
+
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
