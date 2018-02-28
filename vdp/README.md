@@ -24,7 +24,7 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
  ```
 
 
-**Generating the x-pay-token**
+**<a name="xpaygen"></a>Generating the x-pay-token**
 
 1. Build a string of concatenated values with the following parameters:
 
@@ -45,6 +45,6 @@ message = timestamp + resource_path + query_string + request_body;
 ```
 xpaytoken = "xv2:" + ":" + SHA256HMAC(shared_secret,message);
 ```
-
+**<a name="hwphp"></a>Testing x-pay-token with `helloworld`**
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
