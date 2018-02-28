@@ -29,9 +29,9 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
 1. Build a string of concatenated values with the following parameters:
 
 |Parameter     |Description     |
-|..............|................|
+|..............|:..............:|
 |timestamp     |Current *UTC* timestamp|
-|resource_path |API endpoint    |
+|resource_path |The API endpoint    |
 |query_string  |The apiKey is a required query parameter.  Query parameters should be in lexicographical order.|
 |request_body  |The API endpoint-specific request body string.|
 
