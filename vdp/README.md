@@ -35,5 +35,11 @@ GET /vdp/helloworld?apikey=KSKDFJOP934ALSFDJP34 HTTP/1.0
 |query_string  |The apiKey is a required query parameter.  Query parameters should be in lexicographical order.|
 |request_body  |The API endpoint-specific request body string.|
 
+**Example:**
+```JAVA
+String message = timestamp + resource_path + query_string + request_body;
+```
+2. Construct the `x-pay-token` as shown below:
+
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
