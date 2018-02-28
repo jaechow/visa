@@ -67,5 +67,6 @@ If the calculation of the `x-pay-token` is correct you will see a timestamp and 
 }
 ```
 
+
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
