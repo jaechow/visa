@@ -67,7 +67,13 @@ If the calculation of the `x-pay-token` is correct you will see a timestamp and 
 }
 ```
 
-
+### <a name="sui"></a>Testing x-pay-token with SoapUI ###
+1. Download [**SoapUI 5.4**](https://www.soapui.org/downloads/soapui/soapui-os-older-versions.html)
+2. Save `VDP-soapui-project.xml` to your preferred project directory
+3. Open SoapUI and import `VDP-soapui-project.xml` by selecting **File>Import Project**
+4. Expand the VDP project and click the `happyPath` Test Case
+5. Input your `apiKey` and `sharedSecret` (leave `x-pay-token` **blank**)
+6. Double-click the Testsuite named `helloworld` and click the green **play** icon
 
 To get set up, navigate to:
 https://developer.visa.com/vdpguide#x_pay_token
