@@ -69,6 +69,7 @@ If the calculation of the `x-pay-token` is correct you will see a timestamp and 
 
 ### <a name="sui"></a>Testing x-pay-token with SoapUI ###
 1. Download [**SoapUI 5.4**](https://www.soapui.org/downloads/soapui/soapui-os-older-versions.html)
+> SoapUI 5.2 is acceptable
 2. Save `VDP-soapui-project.xml` to your preferred project directory
 3. Open SoapUI and import `VDP-soapui-project.xml` by selecting **File>Import Project**
 ![alt text](images/Menu_006_arw.png "File>Import Project")
