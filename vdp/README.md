@@ -13,7 +13,7 @@ To successfully invoke Visa APIs using `x-pay-token`, your application needs to 
 |Accept  |Application/json|
 |x-pay-token|x-pay-token*|
 
-**Note:** Refer to the section below on hwo to generate the `x-pay-token` value with SHA256 HMAC.
+**\*Note:** Refer to the section below on hwo to generate the `x-pay-token` value with SHA256 HMAC.
 
 ##### Sample Header #####
 ```
